@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+ background-color: pink;
+ margin: 0;
+ font-family: impact;
+ color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: palevioletred;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+<body>
+<div class="navbar">
+<form name="loginform" onSubmit="return validateForm();" action="webdev.html" method="post" align="right"><br>
+    <label >User name</label>
+    <input type="text" name="usr" placeholder="username"> 
+    <label>Password</label>
+    <input type="password" name="pword" placeholder="password">
+    <input type="submit" value="Login"/><br><br>
+</form>
+</div>
+<script>
+    function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "admin"; 
+        var password = "1234";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+</script>
+
+<img src="aboutheader.jpg" alt="image" style="width:100%">
+<center>
+	<h1><font face="impact" font color="PaleVioletRed">DON'T MISS OUT!</h1>
+	<h3>Follow us on our social media accounts</font></h3>
+	<a href="https://www.instagram.com/kyliecosmetics/"><img src="ig.png" alt="igicon" height="45px" width="65px"></a>
+	<br>
+	<a href="https://www.facebook.com/KylieCosmetics"><img src="fb.png" alt="fbicon" height="40px" width="43px"></a>
+	<br>
+	<a href="https://twitter.com/kyliecosmetics"><img src="twitter.png" alt="twittericon" height="48px" width="50px"></a>
+	<p><b>COPYRIGHT © 2018 KYLIE COSMETICS BY KYLIE JENNER</b></p>
+</center>
+
+</body>
+</html>

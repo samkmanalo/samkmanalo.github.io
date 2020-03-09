@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kylie Cosmetics</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: pink;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: PaleVioletRed;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	font-family: impact;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: pink;
+	color: black;
+}
+
+.active {
+  background-color: pink;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row::after {
+	clear: both;
+	display: table;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: pink;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.container:hover .overlay {
+	width: 100%;
+	left: 0;
+}
+
+.text {
+	font-family: impact;
+	color: PaleVioletRed;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+h1 {
+	font-family: impact;
+	color: PaleVioletRed;
+	text-align: center;
+}
+
+p {
+	font-size: large;
+	font-family: arial;
+	color: black;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+	<a href="webdev.html"><img src="kyliecosmeticsbykyliejenner.png" alt="home" height="18px" width="100px"></a>
+	<a href="products.html"><img src="buyicon.jpg" alt="shop" height="18px" width="28px" hspace="5">SHOP NOW</a>
+	<a href="about.html"><img src="abouticon.png" alt="shop" height="18px" width="28px" hspace="5">ABOUT</a>
+	<a href="contactus.html">CONTACT US</a>
+	<a style="float:right" class="active" href="index.html"><img src="logout.png"  alt="shop" height="18px" width="28px" hspace="5"><b>LOG OUT</b></a>
+</div>
+
+
+<img src="kylie.png" alt="header" style="width:100%">
+
+<h1>Kylie Cosmetics by Kylie Jenner | Products<h1>
+
+<div class="row">
+<div class="column">
+	<div class="container">
+	<a href="birthdaycollection.html">
+	<img src="birthday.jpg" alt="bday" class="image">
+		<div class="overlay">
+		<div class="text"><b>Birthday Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="kokokollection.html">
+	<img src="koko.jpg" alt="koko" class="image">
+		<div class="overlay">
+		<div class="text"><b>Koko Lip Kit<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="summercollection.html">
+	<img src="summer.jpg" alt="summer" class="image">
+		<div class="overlay">
+		<div class="text"><b>Summer Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="stormicollection.html">
+	<img src="stormi.jpg" alt="stormi" class="image">
+		<div class="overlay">
+		<a href="stormicollection.html">
+		<div class="text"><b>Stormi Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="kkwxkylielipset.html">
+	<img src="kkwkylie.jpg" alt="kkw" class="image">
+		<div class="overlay">
+		<a href="kkwxkylielipset.html">
+		<div class="text"><b>KKW x Kylie Lip Set<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="holidaycollection.html">
+	<img src="holiday.jpg" alt="h" class="image">
+		<div class="overlay">
+		<div class="text"><b>Holiday Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="palette.html">
+	<img src="palette.jpg" alt="palette" class="image">
+		<div class="overlay">
+		<div class="text"><b>Palette Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="highglosses.html">
+	<img src="highglosses.jpg" alt="glosses" class="image">
+		<div class="overlay">
+		<div class="text"><b>High Glosses<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="kybrow.html">
+	<img src="kybrow.jpg" alt="brow" class="image">
+		<div class="overlay">
+		<div class="text"><b>Kybrow<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="eyeglazeshades.html">
+	<img src="egs.jpg" alt="egs" class="image">
+		<div class="overlay">
+		<div class="text"><b>Eye Glaze Shade<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="kylielips.html">
+	<img src="kylielips.jpg" alt="kylielips" class="image">
+		<div class="overlay">
+		<div class="text"><b>Kylie Lips Collection<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<div class="column">
+	<div class="container">
+	<a href="kylieskin.html">
+	<img src="kylieskin.jpg" alt="kylieskin" class="image">
+		<div class="overlay">
+		<div class="text"><b>Kylie Skin<b></div>
+		</div>
+	</a>
+	</div>
+</div>
+
+<center>
+	<h1><font face="impact" font color="PaleVioletRed">DON'T MISS OUT!</h1>
+	<h3>Follow us on our social media accounts</font></h3>
+	<a href="https://www.instagram.com/kyliecosmetics/"><img src="ig.png" alt="igicon" height="45px" width="65px"></a>
+	<br>
+	<a href="https://www.facebook.com/KylieCosmetics"><img src="fb.png" alt="fbicon" height="40px" width="43px"></a>
+	<br>
+	<a href="https://twitter.com/kyliecosmetics"><img src="twitter.png" alt="twittericon" height="48px" width="50px"></a>
+</center>
+
+<p><b>COPYRIGHT © 2018 KYLIE COSMETICS BY KYLIE JENNER</b></p>
+</body>
+</html>

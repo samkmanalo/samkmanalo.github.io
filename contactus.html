@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kylie Cosmetics</title>
+<style>
+body {
+	background-color: black;
+	margin: 0;
+	font-family: impact;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid pink;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+input[type=submit] {
+	background-color: pink;
+	color: white;
+	padding: 17px 30px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: palevioletred;
+}
+
+.container {
+	background-color: LavenderBlush;
+	padding: 10px;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.button {
+	background-color: PaleVioletRed;
+	border: none;
+	color: pink;
+	padding: 20px 144px;
+	text-align: center;
+	text-decoration: none;
+	font-family: impact;
+	display: inline-block;
+	font-size: 30px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<img src="aboutheader.jpg" alt="image" style="width:100%">
+<img src="headercontactus.jpg" alt="image" style="width:100%">
+
+<div class="container">
+	<div style="text-align:center">
+		<h1><font size="25" font color="palevioletred">Contact Us</font></h1>
+	</div>
+	<div class="row">
+		<div class="column">
+			<img src="kybrow2.jpg" style="width:100%">
+		</div>
+    <div class="column">
+	<form action="webdev.html">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name" required>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+			<label for="country">Country</label>
+			<select id="country" name="country">
+				<option value="philippines">Philippines</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			</select>
+			<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something..." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+		</form>
+    </div>
+  </div>
+</div>
+<br>
+ <center>
+	<a href="products.html" class="button">GO BACK</a>
+	<br>
+	<h1><font face="impact" font color="PaleVioletRed">DON'T MISS OUT!</h1>
+	<h3>Follow us on our social media accounts</font></h3>
+	<a href="https://www.instagram.com/kyliecosmetics/"><img src="ig.png" alt="igicon" height="45px" width="65px"></a>
+	<br>
+	<a href="https://www.facebook.com/KylieCosmetics"><img src="fb.png" alt="fbicon" height="40px" width="43px"></a>
+	<br>
+	<a href="https://twitter.com/kyliecosmetics"><img src="twitter.png" alt="twittericon" height="48px" width="50px"></a>
+
+<p><b>COPYRIGHT © 2018 KYLIE COSMETICS BY KYLIE JENNER</b></p>
+</center> 
+</body>
+</html>
